@@ -19,6 +19,12 @@ I customized bspwm in the style of 3 gtk themes
 `rwg` - random wallpapers for gruvbox
 `rwn` - random wallpapers for nord
 
+You need this pkgs:
+```
+sudo pacman -S bspwm picom sxhkd polybar kitty lxappearance feh dunst rofi xorg
+yay -S everforest-gtk-theme-git nordic-theme gruvbox-dark-gtk 
+```
+
 Installing: 
 ```
 git clone https://github.com/SplatDem/Bspwm-gtk-themes
