@@ -17,11 +17,11 @@ cd
 mkdir ~/.themes
 cd ~/.themes
 cp -r sxhkd ~/.config/
-cp -r ~/bspwm-gtk-themes/everforest ~/.themes
-cp -r ~/bspwm-gtk-themes/nord ~/.themes
-cp -r ~/bspwm-gtk-themes/gruvbox ~/.themes
-cp -r ~/bspwm-gtk-themes/scripts ~/.themes
-cp -r ~/bspwm-gtk-themes/walls ~/.themes
+cp -r ~/Bspwm-gtk-themes/everforest ~/.themes
+cp -r ~/Bspwm-gtk-themes/nord ~/.themes
+cp -r ~/Bspwm-gtk-themes/gruvbox ~/.themes
+cp -r ~/Bspwm-gtk-themes/scripts ~/.themes
+cp -r ~/Bspwm-gtk-themes/walls ~/.themes
 
 cd ~/.themes
 cd scripts
@@ -31,6 +31,6 @@ sudo cp ef /bin/; sudo cp gb /bin/; sudo cp nrd /bin/; sudo cp rwe /bin/; sudo c
 
 cd
 
-rm -r bspwm-gtk-themes
+rm -r Bspwm-gtk-themes
 
 echo >> "YOU CAN FIND ALL IN ~/.themes"
