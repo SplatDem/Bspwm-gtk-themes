@@ -1,0 +1,23 @@
+#! /bin/bash
+
+rm -r ~/.config/bspwm/
+rm -r ~/.config/dunst/ 
+rm -r ~/.config/gtk-2.0/ 
+rm -r ~/.config/gtk-3.0/ 
+rm -r ~/.config/picom/
+rm -r ~/.config/polybar/ 
+rm -r ~/.config/rofi/ 
+
+killall polybar
+
+cp -r ~/.themes/nord/rofi/ ~/.config/
+cp -r ~/.themes/nord/polybar/ ~/.config/
+cp -r ~/.themes/nord/gtk-3.0/ ~/.config/
+cp -r ~/.themes/nord/gtk-2.0/ ~/.config/
+cp -r ~/.themes/nord/bspwm/ ~/.config/
+cp -r ~/.themes/nord/picom/ ~/.config/
+cp -r ~/.themes/nord/dunst/ ~/.config/
+cp -r ~/.themes/nord/kitty ~/.config/
+
+feh --randomize --no-fehbg --bg-fill ~/.themes/walls/nord_walls/
+bspc wm -r

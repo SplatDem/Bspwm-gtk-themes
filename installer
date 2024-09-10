@@ -1,0 +1,36 @@
+#! /bin/bash
+
+if [ "$(id -u)" = 0 ]; then
+    echo "This script MUST NOT be run as root user."
+    exit 1
+fi
+
+cd
+
+sudo pacman -S bspwm picom sxhkd polybar kitty lxappearance feh dunst rofi xorg
+yay -S everforest-gtk-theme-git nordic-theme gruvbox-dark-gtk 
+
+cd ~/.config/
+rm -r sxhkd
+cd
+
+mkdir ~/.themes
+cd ~/.themes
+cp -r sxhkd ~/.config/
+cp -r ~/bspwm-gtk-themes/everforest ~/.themes
+cp -r ~/bspwm-gtk-themes/nord ~/.themes
+cp -r ~/bspwm-gtk-themes/gruvbox ~/.themes
+cp -r ~/bspwm-gtk-themes/scripts ~/.themes
+cp -r ~/bspwm-gtk-themes/walls ~/.themes
+
+cd ~/.themes
+cd scripts
+chmod +x ef; chmod +x gb; chmod +x nrd; chmod +x rwe; chmod +x rwg; chmod +x rwn;
+
+sudo cp ef /bin/; sudo cp gb /bin/; sudo cp nrd /bin/; sudo cp rwe /bin/; sudo cp rwg /bin/; sudo cp rwn /bin/
+
+cd
+
+rm -r bspwm-gtk-themes
+
+echo >> "YOU CAN FIND ALL IN ~/.themes"

@@ -1,0 +1,23 @@
+#! /bin/bash
+
+rm -r ~/.config/bspwm/
+rm -r ~/.config/dunst/ 
+rm -r ~/.config/gtk-2.0/ 
+rm -r ~/.config/gtk-3.0/ 
+rm -r ~/.config/picom/
+rm -r ~/.config/polybar/ 
+rm -r ~/.config/rofi/ 
+
+killall polybar
+
+cp -r ~/.themes/everforest/rofi/ ~/.config/
+cp -r ~/.themes/everforest/polybar/ ~/.config/
+cp -r ~/.themes/everforest/gtk-3.0/ ~/.config/
+cp -r ~/.themes/everforest/gtk-2.0/ ~/.config/
+cp -r ~/.themes/everforest/bspwm/ ~/.config/
+cp -r ~/.themes/everforest/picom/ ~/.config/
+cp -r ~/.themes/everforest/dunst/ ~/.config/
+cp -r ~/.themes/everforest/kitty ~/.config/
+
+feh --randomize --no-fehbg --bg-fill ~/.themes/walls/everforest_walls/
+bspc wm -r

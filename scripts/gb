@@ -1,0 +1,23 @@
+#! /bin/bash
+
+rm -r ~/.config/bspwm/
+rm -r ~/.config/dunst/ 
+rm -r ~/.config/gtk-2.0/ 
+rm -r ~/.config/gtk-3.0/ 
+rm -r ~/.config/picom/
+rm -r ~/.config/polybar/ 
+rm -r ~/.config/rofi/ 
+
+killall polybar
+
+cp -r ~/.themes/gruvbox/rofi/ ~/.config/
+cp -r ~/.themes/gruvbox/polybar/ ~/.config/
+cp -r ~/.themes/gruvbox/gtk-3.0/ ~/.config/
+cp -r ~/.themes/gruvbox/gtk-2.0/ ~/.config/
+cp -r ~/.themes/gruvbox/bspwm/ ~/.config/
+cp -r ~/.themes/gruvbox/picom/ ~/.config/
+cp -r ~/.themes/gruvbox/dunst/ ~/.config/
+cp -r ~/.themes/gruvbox/kitty ~/.config/
+
+feh --randomize --no-fehbg --bg-fill ~/.themes/walls/gruvbox_walls/
+bspc wm -r
