@@ -7,9 +7,6 @@ fi
 
 cd
 
-sudo pacman -S bspwm picom sxhkd polybar kitty lxappearance feh dunst rofi xorg
-yay -S everforest-gtk-theme-git nordic-theme gruvbox-dark-gtk 
-
 cd ~/.config/
 rm -r sxhkd
 cd
