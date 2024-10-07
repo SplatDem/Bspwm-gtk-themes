@@ -1,0 +1,21 @@
+#! /bin/bash
+
+rm -r ~/.config/bspwm/
+rm -r ~/.config/dunst/
+rm -r ~/.config/gtk-2.0/
+rm -r ~/.config/gtk-3.0/
+rm -r ~/.config/picom/
+rm -r ~/.config/polybar/
+rm -r ~/.config/rofi/
+
+killall polybar
+
+cp -r ~/.themes/clear/rofi/ ~/.config/
+cp -r ~/.themes/clear/polybar/ ~/.config/
+cp -r ~/.themes/clear//gtk-3.0/ ~/.config/
+cp -r ~/.themes/clear/gtk-2.0/ ~/.config/
+cp -r ~/.themes/clear/bspwm/ ~/.config/
+cp -r ~/.themes/clear/picom/ ~/.config/
+cp -r ~/.themes/clear/dunst/ ~/.config/
+
+bspc wm -r
