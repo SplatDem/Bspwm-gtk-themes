@@ -9,6 +9,7 @@ I customized bspwm in the style of 3 gtk themes
 
 ![2024-10-06-214051_1920x1080_scrot](https://github.com/user-attachments/assets/3f91cd78-2cdc-474e-8093-56da9ddac3a1)
 
+![2024-09-16-231523_1920x1080_scrot](https://github.com/user-attachments/assets/86c03123-f5df-495b-aa16-bdf5ebac4ef7)
 
 **Change theme** in terminal:
 `gb` - gruvbox
