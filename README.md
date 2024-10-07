@@ -7,6 +7,7 @@ I customized bspwm in the style of 3 gtk themes
 
 ![nord](https://github.com/user-attachments/assets/2aca8edb-52d5-436a-b4da-0c0acc3383bb)
 
+![2024-10-06-214051_1920x1080_scrot](https://github.com/user-attachments/assets/3f91cd78-2cdc-474e-8093-56da9ddac3a1)
 
 
 **Change theme** in terminal:
