@@ -7,24 +7,22 @@ fi
 
 cd
 
-cd ~/.config/
-rm -r sxhkd
-cd
-
 mkdir ~/.themes
 cd ~/.themes
 cp -r sxhkd ~/.config/
 cp -r ~/Bspwm-gtk-themes/everforest ~/.themes
 cp -r ~/Bspwm-gtk-themes/nord ~/.themes
 cp -r ~/Bspwm-gtk-themes/gruvbox ~/.themes
+cp -r ~/Bspwm-gtk-themes/clear ~/.themes
+cp -r ~/Bspwm-gtk-themes/purain ~/.themes
 cp -r ~/Bspwm-gtk-themes/scripts ~/.themes
 cp -r ~/Bspwm-gtk-themes/walls ~/.themes
 
 cd ~/.themes
 cd scripts
-chmod +x ef; chmod +x gb; chmod +x nrd; chmod +x rwe; chmod +x rwg; chmod +x rwn;
+chmod +x ef; chmod +x gb; chmod +x nrd; chmod +x rwe; chmod +x rwg; chmod +x rwn; chmod +x pr
 
-sudo cp ef /bin/; sudo cp gb /bin/; sudo cp nrd /bin/; sudo cp rwe /bin/; sudo cp rwg /bin/; sudo cp rwn /bin/
+sudo cp ef /bin/; sudo cp gb /bin/; sudo cp nrd /bin/; sudo cp rwe /bin/; sudo cp rwg /bin/; sudo cp rwn /bin/; sudo cp pr /bin/
 
 cd
 
