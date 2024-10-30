@@ -40,4 +40,4 @@ chmod +x installer
 ```
 ./installer
 ```
-LINUx TORBALDs
+LINUx TORBALLDs
