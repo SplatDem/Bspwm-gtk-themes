@@ -41,3 +41,4 @@ chmod +x installer
 ./installer
 ```
 LINUx TORBALLDs
+/
